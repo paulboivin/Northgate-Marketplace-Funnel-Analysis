@@ -20,7 +20,7 @@ stakeholders have requested an investigation into this discrepancy and
 potential solutions to address the gap.
 
 ## Dashboard
-![Northgate Marketplace Funnel Dashboard](dashboard/dashboard_screenshot.png.png)
+![Northgate Marketplace Funnel Dashboard](dashboard/dashboard_screenshot.png)
 
 ## Methodology
 1. Generated a synthetic transactional dataset simulating 76,709 customer 
