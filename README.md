@@ -1,17 +1,17 @@
 # Northgate-Marketplace-Funnel-Analysis
 E-commerce funnel analysis identifying $217,956 in lost revenue from cart abandonment for a fictional company. SQL, Python, Power BI.
 
-# Cart Abandonment and Revenue Recovery Analysis — Northgate Marketplace
+# Cart Abandonment and Revenue Recovery Analysis - Northgate Marketplace
 
 ## Executive Summary
 Northgate Marketplace achieved an overall session-to-purchase conversion 
 rate of 2.22% in 2024, while cart abandonment resulted in $217,956 in 
-lost revenue — 1.82 times the $119,555 in revenue successfully captured — 
+lost revenue, 1.82 times the $119,555 in revenue successfully captured,  
 with 65% of all sessions originating from mobile devices. After identifying 
 that the largest source of revenue loss stems from cart abandonment in the 
 Electronics category, recommended interventions include targeted cart 
 recovery tools, abandoned cart email reminders, and a mobile checkout 
-experience redesign, projected to generate between $2,982 and $9,048 in 
+experience redesign, which is projected to generate between $2,982 and $9,048 in 
 additional annual revenue.
 
 ## Business Problem
