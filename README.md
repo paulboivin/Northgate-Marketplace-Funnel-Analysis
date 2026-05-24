@@ -40,13 +40,13 @@ impact of reducing Electronics cart abandonment by 5%, 10%, and 15%.
 
 ## Skills
 **SQL:** Relational database design, CTEs, window functions, anti-join 
-pattern, funnel aggregation queries
+pattern, funnel aggregation queries.
 
 **Power BI:** Data modeling with relationships, DAX measures, funnel chart, 
-interactive slicer, dashboard design
+interactive slicer, dashboard design.
 
 **Python:** Synthetic data generation with realistic e-commerce benchmarks, 
-revenue recovery simulation modeling
+revenue recovery simulation modeling.
 
 ## Results
 The dashboard enables sales stakeholders to independently access and filter 
