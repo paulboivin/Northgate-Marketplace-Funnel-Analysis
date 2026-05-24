@@ -81,6 +81,7 @@ abandonment patterns.
 
 ## Repository Structure
 
+```bash
 Northgate-Marketplace-Funnel-Analysis/
 │
 ├── README.md
@@ -104,6 +105,10 @@ Northgate-Marketplace-Funnel-Analysis/
 │   └── dashboard_screenshot.png
 └── insights/
 └── Northgate_Cart_Abandonment_Analysis.docx
+
+```
+
+---
 
 ## How to Run
 Requires Python with pandas and numpy, SQLite or related SQL programs 
