@@ -101,7 +101,7 @@ Northgate-Marketplace-Funnel-Analysis/
 │   ├── Northgate_Marketplace_Dashboard.pbix
 │   └── dashboard_screenshot.png
 └── insights/
-└── Northgate_Cart_Abandonment_Analysis.docx
+    └── Northgate_Cart_Abandonment_Analysis.docx
 
 ```
 
