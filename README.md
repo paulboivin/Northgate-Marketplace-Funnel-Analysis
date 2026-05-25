@@ -62,7 +62,7 @@ abandonment by 5% to 15% would generate between $2,982 and $9,048 in
 additional annual revenue. Recommended actions for the Product, Marketing, 
 and Revenue Operations teams:
 
-1. Implement cart recovery tools for customers with active but inactive carts.
+1. Implement cart recovery tools for customers with active but abandoned carts.
 2. Create email and text reminders for customers with abandoned carts.
 3. Redesign the mobile checkout experience to reduce friction and improve 
 conversion for high-value Electronics purchases.
