@@ -1,11 +1,12 @@
 -- Query 3: Monthly Funnel Conversion Rate Trend
--- Purpose: Tracks how the overall conversion rate has changed
--- month over month across the 2024 analytical period
--- Business Question 3: How has the overall funnel conversion
--- rate trended month over month?
+
+-- This query tracks how the overall conversion rate has changed
+-- month over month across the 2024 analytical period.
+
+-- How has the overall funnel conversion rate trended month over month?
 
 WITH monthly_funnel AS (
-    -- Count sessions and purchases per month
+    -- Counts the sessions and purchases per month.
     SELECT
         strftime('%m', s.session_date)      AS month_num,
         CASE strftime('%m', s.session_date)
@@ -32,7 +33,7 @@ WITH monthly_funnel AS (
     GROUP BY month_num, month_name
 ),
 monthly_with_lag AS (
-    -- Add previous month conversion rate for MoM comparison
+    -- Adds previous month conversion rate for MoM comparison.
     SELECT
         month_num,
         month_name,
@@ -59,10 +60,10 @@ SELECT
     conversion_rate_pct,
     cart_rate_pct,
     prev_month_conversion,
-    -- Month over month change in conversion rate
+    -- This is the month over month change in conversion rate.
     ROUND(conversion_rate_pct - 
           prev_month_conversion, 2)         AS mom_conversion_change,
-    -- Month over month change in session volume
+    -- This is the month over month change in session volume.
     ROUND((total_sessions - prev_month_sessions) 
           * 100.0 / prev_month_sessions, 2) AS mom_session_growth_pct
 FROM monthly_with_lag

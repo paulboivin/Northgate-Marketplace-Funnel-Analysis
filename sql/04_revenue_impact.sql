@@ -1,13 +1,14 @@
 -- Query 4: Revenue Impact of Cart Abandonment
--- Purpose: Quantifies the potential revenue lost at the
--- cart abandonment stage by category
--- Business Question 4: How much potential revenue is being
--- lost at the cart abandonment stage?
+
+-- This query quantifies the potential revenue lost at the
+-- cart abandonment stage by category.
+
+-- How much potential revenue is being lost at the cart abandonment stage?
 
 
 WITH cart_events AS (
-	 -- Identify all add_to_cart events with product
-     -- and price information
+	 -- Identifies all add_to_cart events with product
+     -- and price information.
     SELECT
         e.session_id,
         e.product_id,
@@ -21,14 +22,14 @@ WITH cart_events AS (
     WHERE e.event_type = 'add_to_cart'
 ),
 purchase_sessions AS (
-	 -- Identify sessions that completed a purchase
+	 -- Identifies sessions that completed a purchase.
     SELECT DISTINCT session_id
     FROM events
     WHERE event_type = 'purchase'
 ),
 abandoned AS (
-	 -- Cart events where no purchase was completed
-    -- These represent lost revenue opportunities
+	 -- Identifies cart events where no purchase was completed.
+     -- These represent lost revenue opportunities.
     SELECT
         ce.session_id,
         ce.product_id,

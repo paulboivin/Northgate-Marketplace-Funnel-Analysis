@@ -1,12 +1,13 @@
 -- Query 2: Cart Abandonment by Category and Device Type
--- Purpose: Identifies which product categories and device types
--- have the highest cart abandonment rates
--- Business Question 2: How does cart abandonment vary across
--- product categories and device types?
+
+-- This query identifies which product categories and device types
+-- have the highest cart abandonment rates.
+
+-- How does cart abandonment vary across product categories and device types?
 
 WITH cart_sessions AS (
-    -- Identify sessions that reached add_to_cart
-    -- and whether they subsequently completed a purchase
+    -- Identifying sessions that reached add_to_cart
+    -- and whether they completed a purchase.
     SELECT
         e.session_id,
         p.category,

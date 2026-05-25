@@ -1,7 +1,9 @@
 -- Query 1: Overall Funnel Conversion Rate and Stage Drop-off
--- Purpose: Measures how many sessions progress through each
--- funnel stage and where the largest drop-offs occur
--- Business Question 1: What is the overall end-to-end conversion
+
+-- This query measures how many sessions progress through each
+-- funnel stage and in which one does the largest drop-offs occur.
+
+-- What is the overall end-to-end conversion
 -- rate and drop-off rate at each individual funnel stage?
 
 WITH funnel_stages AS (
