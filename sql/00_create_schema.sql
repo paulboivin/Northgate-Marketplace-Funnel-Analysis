@@ -2,7 +2,7 @@
 -- Creating all four tables with primary and foreign key constraints.
 
 -- Table 1: Products
--- Thiss is the reference table for all products in the catalog.
+-- This is the reference table for all products in the catalog.
 CREATE TABLE IF NOT EXISTS products (
     product_id   INTEGER PRIMARY KEY,
     product_name TEXT    NOT NULL,
