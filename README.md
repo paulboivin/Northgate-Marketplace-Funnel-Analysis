@@ -1,11 +1,11 @@
-# Cart Abandonment and Revenue Recovery Analysis — Northgate Marketplace
+# Cart Abandonment and Revenue Recovery Analysis - Northgate Marketplace
 
 ## Executive Summary
 
 Northgate Marketplace achieved an overall session-to-purchase 
 conversion rate of 2.22% in 2024, while cart abandonment resulted 
-in $217,956 in lost revenue — 1.82 times the $119,555 in revenue 
-successfully captured — with 65% of all sessions originating from 
+in $217,956 in lost revenue, 1.82 times the $119,555 in revenue 
+successfully captured, with 65% of all sessions originating from 
 mobile devices. After identifying that the largest source of 
 revenue loss stems from cart abandonment in the Electronics 
 category, recommended interventions include targeted cart 
@@ -47,22 +47,22 @@ so, which segment warrants priority intervention?
 
 ## Methodology
 
-1. **Data Generation (Python)** — Generated a synthetic 
+1. **Data Generation (Python):** Generated a synthetic 
 transactional dataset simulating 76,709 customer sessions across 
 2024, including products, sessions, events, and orders across a 
 four-table relational schema.
 
-2. **SQL Analysis (SQLite)** — Wrote SQL queries to analyze funnel 
+2. **SQL Analysis (SQLite):** Wrote SQL queries to analyze funnel 
 conversion rates, cart abandonment by category and device type, 
 monthly conversion trends, and revenue impact of funnel drop-off.
 
-3. **Dashboard (Power BI)** — Built an interactive dashboard to 
+3. **Dashboard (Power BI):** Built an interactive dashboard to 
 visualize funnel performance, lost revenue by category, and 
 monthly conversion trends with category filtering, enabling sales 
 stakeholders to independently access and filter funnel metrics by 
 product category.
 
-4. **Revenue Recovery Simulation (Python)** — Created a simulation 
+4. **Revenue Recovery Simulation (Python):** Created a simulation 
 modeling the financial impact of reducing Electronics cart 
 abandonment by 5%, 10%, and 15%.
 
@@ -71,32 +71,32 @@ abandonment by 5%, 10%, and 15%.
 ## Skills
 
 **SQL:** Relational database design, CTEs, window functions, 
-anti-join pattern, funnel aggregation queries
+anti-join pattern, funnel aggregation queries.
 
 **Power BI:** Data modeling with relationships, DAX measures, 
-funnel chart, interactive slicer, dashboard design
+funnel chart, interactive slicer, dashboard design.
 
 **Python:** Synthetic data generation with realistic e-commerce 
-benchmarks, revenue recovery simulation modeling
+benchmarks, revenue recovery simulation modeling.
 
 ---
 
 ## Results
 
 **The primary funnel leak occurs at the product view to add-to-cart 
-stage.** An 88.63% drop-off rate at this stage represents the 
+stage:** An 88.63% drop-off rate at this stage represents the 
 single largest source of friction in the purchase funnel, ahead of 
 any later-stage abandonment point.
 
-**Electronics drives the largest share of lost revenue.** The 
+**Electronics drives the largest share of lost revenue:** The 
 category accounts for 27.88% of total lost revenue at $60,764 
-annually, driven by high per-cart values averaging $102.82 — 
+annually, driven by high per-cart values averaging $102.82, 
 making it the highest-value abandonment segment in the dataset. 
 Home and Kitchen and Sports and Outdoors are secondary categories 
 of concern.
 
 **Mobile users abandon carts at consistently higher rates than 
-desktop users.** This pattern holds across all product categories, 
+desktop users:** This pattern holds across all product categories, 
 making mobile checkout optimization a priority intervention 
 alongside category-specific fixes.
 
@@ -107,23 +107,23 @@ alongside category-specific fixes.
 The revenue recovery model projects that reducing Electronics cart 
 abandonment by 5% to 15% would generate between $2,982 and $9,048 
 in additional annual revenue. The following recommendations are 
-intended for the Product, Marketing, and Revenue Operations teams.
+intended for the Product, Marketing, and Revenue Operations teams:
 
-**Deploy cart recovery tools for active but abandoned sessions.** 
+**Deploy cart recovery tools for active but abandoned sessions:** 
 Real-time recovery prompts for customers with items still in cart 
 but no completed purchase would address the highest-frequency 
 abandonment scenario directly.
 
-**Launch email and text reminders for abandoned carts.** Automated 
+**Launch email and text reminders for abandoned carts:** Automated 
 reminders targeting customers who abandon mid-funnel would 
 re-engage the segment most likely to convert with minimal 
 additional friction.
 
-**Redesign the mobile checkout experience.** Mobile users show 
+**Redesign the mobile checkout experience:** Mobile users show 
 consistently higher abandonment than desktop across all 
 categories; reducing checkout friction on mobile is the 
-highest-leverage fix given that Electronics purchases — the 
-highest-value abandonment segment — skew toward mobile sessions.
+highest-leverage fix given that Electronics purchases, the 
+highest-value abandonment segment, skew toward mobile sessions.
 
 Prioritizing Electronics and mobile users targets the 
 highest-value abandonment segment identified in the analysis.
@@ -132,17 +132,17 @@ highest-value abandonment segment identified in the analysis.
 
 ## Next Steps
 
-**A/B test the mobile checkout redesign.** Establish a controlled 
+**A/B test the mobile checkout redesign:** Establish a controlled 
 test comparing the redesigned mobile checkout experience against 
 the current flow to validate the abandonment reduction before full 
 rollout.
 
-**Examine secondary categories for similar patterns.** Home and 
+**Examine secondary categories for similar patterns:** Home and 
 Kitchen and Sports and Outdoors showed elevated abandonment but 
 were not the primary focus of this analysis; a category-specific 
 investigation would determine whether the same interventions apply.
 
-**Measure campaign effectiveness.** Track email and text reminder 
+**Measure campaign effectiveness:** Track email and text reminder 
 open and click-through rates to determine which channel and 
 messaging combination most effectively recovers abandoned carts.
 
